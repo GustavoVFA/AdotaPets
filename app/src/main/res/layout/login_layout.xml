@@ -1,53 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".Login_Activity">
+    android:orientation="vertical">
 
 
-    <ImageView
-        android:id="@+id/imgLogo"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:scaleType="centerCrop"
-        android:layout_margin="20dp"
-        android:src="@drawable/logo" />
-
-    <EditText
-        android:padding="5dp"
-        android:layout_marginBottom="10dp"
-        android:layout_below="@+id/imgLogo"
-        android:id="@+id/edtUsuario"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Insira o Nome de Usuário" />
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        tools:context=".Login_Activity">
 
-    <EditText
-        android:padding="5dp"
-        android:layout_below="@+id/edtUsuario"
-        android:id="@+id/edtSenha"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Insira a Senha" />
 
-    <Button
-        android:layout_margin="5dp"
-        android:layout_below="@+id/edtSenha"
-        android:id="@+id/btnEntrar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Entrar" />
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo" />
 
-    <Button
-        android:layout_margin="5dp"
-        android:layout_below="@id/edtSenha"
-        android:layout_toRightOf="@id/btnEntrar"
-        android:id="@+id/btnSair"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sair" />
+        <EditText
+            android:id="@+id/edtUsuario"
 
-</RelativeLayout>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgLogo"
+            android:layout_marginBottom="10dp"
+            android:hint="Insira o Nome de Usuário"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/edtSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtUsuario"
+            android:hint="Insira a Senha"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtSenha"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btnEntrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtSenha"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:text="Entrar" />
+
+            <Button
+                android:id="@+id/btnSair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtSenha"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/btnEntrar"
+                android:layout_weight="1"
+                android:text="Sair" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
