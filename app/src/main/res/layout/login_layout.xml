@@ -12,9 +12,13 @@
         android:id="@+id/imgLogo"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:layout_margin="20dp"
         android:src="@drawable/logo" />
 
     <EditText
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"
         android:layout_below="@+id/imgLogo"
         android:id="@+id/edtUsuario"
         android:layout_width="match_parent"
@@ -22,6 +26,7 @@
         android:hint="Insira o Nome de Usuário" />
 
     <EditText
+        android:padding="5dp"
         android:layout_below="@+id/edtUsuario"
         android:id="@+id/edtSenha"
         android:layout_width="match_parent"
@@ -29,6 +34,7 @@
         android:hint="Insira a Senha" />
 
     <Button
+        android:layout_margin="5dp"
         android:layout_below="@+id/edtSenha"
         android:id="@+id/btnEntrar"
         android:layout_width="wrap_content"
@@ -36,6 +42,7 @@
         android:text="Entrar" />
 
     <Button
+        android:layout_margin="5dp"
         android:layout_below="@id/edtSenha"
         android:layout_toRightOf="@id/btnEntrar"
         android:id="@+id/btnSair"
