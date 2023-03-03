@@ -15,24 +15,29 @@
         android:src="@drawable/logo" />
 
     <EditText
+        android:layout_below="@+id/imgLogo"
         android:id="@+id/edtUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Insira o Nome de Usuário" />
 
     <EditText
+        android:layout_below="@+id/edtUsuario"
         android:id="@+id/edtSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Insira a Senha" />
 
     <Button
+        android:layout_below="@+id/edtSenha"
         android:id="@+id/btnEntrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Entrar" />
 
     <Button
+        android:layout_below="@id/edtSenha"
+        android:layout_toRightOf="@id/btnEntrar"
         android:id="@+id/btnSair"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
