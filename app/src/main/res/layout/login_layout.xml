@@ -31,6 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/imgLogo"
             android:layout_marginBottom="10dp"
+            android:drawableEnd="@drawable/person"
             android:hint="Insira o Nome de Usuário"
             android:padding="10dp" />
 
@@ -39,6 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/edtUsuario"
+            android:drawableEnd="@drawable/lock"
             android:hint="Insira a Senha"
             android:padding="10dp" />
 
